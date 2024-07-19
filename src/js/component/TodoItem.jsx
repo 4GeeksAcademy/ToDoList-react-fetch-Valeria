@@ -3,10 +3,8 @@ import React from 'react';
 function TodoItem({ todo, onDelete }) {
   return (
     <li>
-      {todo}
-      <button onClick={onDelete} style={{ marginLeft: '10px' }}>
-        Eliminar
-      </button>
+      {todo.label}
+      <button onClick={onDelete}>&times;</button>
     </li>
   );
 }
